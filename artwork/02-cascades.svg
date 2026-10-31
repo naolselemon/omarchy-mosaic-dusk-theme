@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3840" height="2560" viewBox="0 0 3840 2560">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1420" gradientUnits="userSpaceOnUse"><stop stop-color="#0B1C30"/><stop offset=".38" stop-color="#24374F"/><stop offset=".7" stop-color="#646878"/><stop offset=".9" stop-color="#BC958D"/><stop offset="1" stop-color="#E8BE9F"/></linearGradient>
+    <radialGradient id="afterglow" cx="0" cy="0" r="1" gradientTransform="translate(2200 1235) scale(1330 530)" gradientUnits="userSpaceOnUse"><stop stop-color="#F7D4AF" stop-opacity=".78"/><stop offset=".5" stop-color="#D5A499" stop-opacity=".23"/><stop offset="1" stop-color="#D5A499" stop-opacity="0"/></radialGradient>
+    <linearGradient id="distant" x1="0" y1="1060" x2="0" y2="1740" gradientUnits="userSpaceOnUse"><stop stop-color="#9AA4A5"/><stop offset=".58" stop-color="#788F99"/><stop offset="1" stop-color="#416D77"/></linearGradient>
+    <linearGradient id="snow" x1="1520" y1="1150" x2="2070" y2="1870" gradientUnits="userSpaceOnUse"><stop stop-color="#D5D6C7"/><stop offset=".41" stop-color="#94ADB0"/><stop offset="1" stop-color="#406A76"/></linearGradient>
+    <linearGradient id="leftCliff" x1="270" y1="1100" x2="1400" y2="2240" gradientUnits="userSpaceOnUse"><stop stop-color="#526D7B"/><stop offset=".42" stop-color="#385466"/><stop offset="1" stop-color="#173744"/></linearGradient>
+    <linearGradient id="rightCliff" x1="3520" y1="1120" x2="2350" y2="2360" gradientUnits="userSpaceOnUse"><stop stop-color="#697C84"/><stop offset=".4" stop-color="#3C5A66"/><stop offset="1" stop-color="#122F3F"/></linearGradient>
+    <linearGradient id="wetRock" x1="1720" y1="1580" x2="2110" y2="2420" gradientUnits="userSpaceOnUse"><stop stop-color="#587C80"/><stop offset=".36" stop-color="#254C58"/><stop offset="1" stop-color="#0C2937"/></linearGradient>
+    <linearGradient id="run" x1="1690" y1="1480" x2="2390" y2="2320" gradientUnits="userSpaceOnUse"><stop stop-color="#B1CBC0"/><stop offset=".2" stop-color="#609E9E"/><stop offset=".52" stop-color="#3B858B"/><stop offset=".8" stop-color="#4D9A96"/><stop offset="1" stop-color="#A9D0BE"/></linearGradient>
+    <linearGradient id="pool" x1="2130" y1="2090" x2="1900" y2="2560" gradientUnits="userSpaceOnUse"><stop stop-color="#9AC4B4"/><stop offset=".2" stop-color="#68AFA5"/><stop offset=".59" stop-color="#3C8485"/><stop offset="1" stop-color="#174D57"/></linearGradient>
+    <linearGradient id="front" x1="0" y1="2250" x2="0" y2="2560" gradientUnits="userSpaceOnUse"><stop stop-color="#244A50"/><stop offset="1" stop-color="#081E2D"/></linearGradient>
+    <linearGradient id="air" x1="0" y1="1620" x2="0" y2="2120" gradientUnits="userSpaceOnUse"><stop stop-color="#D1D4C1" stop-opacity="0"/><stop offset=".56" stop-color="#BDD0C1" stop-opacity=".25"/><stop offset="1" stop-color="#A9D2C6" stop-opacity="0"/></linearGradient>
+    <radialGradient id="vignette" cx="0" cy="0" r="1" gradientTransform="translate(1930 1410) scale(2560 1890)" gradientUnits="userSpaceOnUse"><stop offset=".35" stop-color="#091B28" stop-opacity="0"/><stop offset="1" stop-color="#091B28" stop-opacity=".46"/></radialGradient>
+    <filter id="blur" x="-30%" y="-100%" width="160%" height="300%"><feGaussianBlur stdDeviation="25"/></filter>
+  </defs>
+  <path d="M0 0h3840v2560H0z" fill="url(#sky)"/>
+  <path d="M0 0h3840v1630H0z" fill="url(#afterglow)"/>
+  <g fill="none" stroke-linecap="round"><path d="M170 580c371-45 578 49 898 16 312-34 470-73 791-24m753 49c266-38 496-4 756-57l307-16" stroke="#B9A4A7" stroke-opacity=".14" stroke-width="24"/><path d="M557 829c231-11 419 32 575 10m1945-3c172-29 290-17 440-50" stroke="#E5B8A8" stroke-opacity=".2" stroke-width="8"/><path d="M128 932c223 31 500 28 734 52m2538-75 277-38" stroke="#DBAD9E" stroke-opacity=".17" stroke-width="5"/></g>
+  <g fill="#DFE7DE" opacity=".48"><circle cx="401" cy="204" r="1.5"/><circle cx="939" cy="333" r="1.7"/><circle cx="1460" cy="192" r="1.2"/><circle cx="2275" cy="272" r="1.7"/><circle cx="3060" cy="182" r="1.5"/><circle cx="3562" cy="405" r="1.3"/></g>
+  <path d="m0 1572 192-74 125-119 151 30 133-153 147 66 169-167 122 83 135-153 154 74 147-109 143 83 158-119 121 107 164-93 167 130 177-44 190 154 142-45 198 174 146-8 165 157v104H0Z" fill="url(#distant)"/>
+  <path d="m916 1155 122 83 135-153 154 74 147-109 143 83 158-119 121 107 164-93 167 130-191-64-99 82-140-32-139 76-171-61-121 81-125-74-189 84Z" fill="#DBD1BD" opacity=".43"/>
+  <path d="M0 1605c568-75 981-37 1339 46 315 73 613 135 917 108 308-28 568-112 864-151 248-32 477-20 720 24v250H0Z" fill="url(#air)"/>
+  <path d="M0 1590c505 75 1064 185 1576 168 506-17 915-173 1357-160 366 11 663 83 907 169v793H0Z" fill="#173743"/>
+  <!-- The receding icefield is enclosed by two uneven walls of fractured slate. -->
+  <path d="m0 1555 154-96 120-195 127 60 161-232 147 87 154-238 155 124 153-178 111 75 124-122 201 168 93-58 141 151 131-47 98 142 127 26 191 214-84 303-433 306-782 55-835-173-590-13-454-210Z" fill="url(#leftCliff)"/>
+  <path d="m0 1555 154-96 120-195 127 60 161-232 147 87 154-238 155 124 153-178-102 256-182 146-123 252-232 190-145 261-230 48-157-193Z" fill="#112F40" opacity=".72"/>
+  <path d="m274 1264 127 60 161-232 147 87 154-238 155 124 153-178 111 75 124-122-86 189-152 118-132 14-133 158-143-17-166 189-134-4-162 197-268 88Z" fill="url(#snow)" opacity=".58"/>
+  <path d="m562 1092 147 87 154-238 155 124 153-178-96 144-123 4-99 175-117-14-95 198-82 42Zm671-183 153 99 93-58 141 151 131-47 98 142-184-48-130-12-100 111-81-113-141-49Z" fill="#DFD7BF" opacity=".52"/>
+  <path d="m562 1092 39 267-184 308 47 334m399-1060 44 186-91 177-17 310m372-727 68 271-127 237m467-352-57 180 187 148" stroke="#A6B9B3" stroke-opacity=".35" stroke-width="12" fill="none"/>
+  <path d="m169 1670 314-214 220 62 174-104 241 81 162-80 218 117 131-54 265 121-337 238-423 156-376 87-371-95-387-81Z" fill="#123340" opacity=".59"/>
+  <path d="m3840 1515-167-61-104-176-138 63-137-211-139 78-155-212-159 99-149-159-125 115-154-74-146 161-123-48-129 149-125 9-183 209-125 49-237 219 172 335 695 66 708-62 630-67 540-88Z" fill="url(#rightCliff)"/>
+  <path d="m3840 1515-167-61-104-176-138 63-137-211-139 78-155-212-159 99-149-159 29 248 185 129 160 250 171 136 249 350 454-116Z" fill="#102D3E" opacity=".67"/>
+  <path d="m3673 1454-104-176-138 63-137-211-139 78-155-212-159 99-149-159-125 115-154-74-146 161-123-48-129 149 175-105 131 27 117-86 188 65 136-116 119 38 115 142 126-26 135 144 179-16Z" fill="#B9C3B4" opacity=".38"/>
+  <path d="m3000 996 155 212 139-78 137 211 138-63 104 176-195-72-149-4-161-107-134 23-153-123-133 58-122-113Zm-699 159 137-80 188 65 136-116-30 177-128 113-147 50-143 172-183-93Z" fill="#D5D1BB" opacity=".32"/>
+  <path d="m3294 1130-41 188 123 172-31 252m-345-746 97 231-83 158 69 249m-516-583-93 258-136 132m1088-102 81 208-167 176" stroke="#A4B8AF" stroke-opacity=".31" stroke-width="12" fill="none"/>
+  <path d="m3840 1830-206-158-199 41-166-125-234 91-190-91-173 93-165-26-214 124-103 301 404 142 555-48 453-93 438 15Z" fill="#173946" opacity=".63"/>
+  <!-- Moraine and the broken shelves carve the water into three separate falls. -->
+  <path d="m1264 1587 190-96 178 44 146-111 157 49 153-105 193 87 127-54 212 114 163-27 189 112-95 151-279 73-117 126-224 9-150 118-180-40-210 122-268-69-240-138-247-12Z" fill="#345765"/>
+  <path d="m1529 1514 103 21 146-111 157 49 153-105 193 87 127-54 153 82-196 65-158-30-177 88-125-16-181 86-158-70-176 65-78-52Z" fill="#B4C2B6" opacity=".33"/>
+  <path d="m1280 1731 254-84 232 67 179-108 186 66 159-78 226 65 257-81 220 22 188 123-212 96-275-40-168 104-201-48-202 78-185-69-214 86-260-94-201 54Z" fill="url(#wetRock)"/>
+  <path d="m1422 1763 192-14 140 31 183-70 163 45 167-73 167 52-145 70-210 10-136 89-184-39-198 74-234-54Z" fill="#72999A" opacity=".27"/>
+  <path d="m1448 1670 196 32 105-47 103 24 112-56 177 35 114-54 123 38 134-34 132 39-148 55-169-12-116 77-147-37-139 83-137-66-128 57-173-49Z" fill="#153947"/>
+  <path d="m1639 1695 99-33 94 35 121-55 128 43 155-46 111 39 130-32 111 47-140 39-166-4-113 59-149-28-137 63-132-57-121 41-172-43Z" fill="#90AAA5" opacity=".39"/>
+  <!-- The icefield feeds a connected winding river across the dark rock terraces. -->
+  <path d="M1600 1610 1720 1484 1818 1462 1901 1410 2020 1469 2113 1437 2220 1520 2179 1610 2010 1690 1822 1684 1695 1750 1555 1688Z" fill="#254552"/>
+  <path d="m1695 1565 123-103 83-52 119 59 93-32 107 83-119-29-76 34-118-35-111 55-108 106Z" fill="#AFBEB4" opacity=".43"/>
+  <path d="m1667 1700 166 23 79-28 140 26 153-53 126 26 123-46 147 54 132-22 178 45-229 55-180-25-156 64-178-48-147 81-175-51-146 73-177-77Z" fill="#152F3D"/>
+  <path d="m1675 1693 160 22 76-30 145 29 150-53 124 25 125-45 145 53 136-23 170 46-218 36-184-22-155 63-178-50-149 78-172-46-146 67-172-59Z" fill="#8CABA5" opacity=".46"/>
+  <!-- Successive asymmetric stone shelves remain visible beneath the winding water. -->
+  <path d="M1640 1811 1763 1743 1900 1755 2031 1700 2210 1722 2343 1675 2495 1764 2500 1841 2360 1908 2206 1883 2012 1959 1800 1910 1670 1879Z" fill="#2A4B57"/>
+  <path d="m1640 1811 123-68 137 12 131-55 179 22 133-47 152 89-183-17-139 41-177-25-185 60-160-20Z" fill="#9AADA5" opacity=".3"/>
+  <path d="m1471 1920 271-46 200 87 180-64 198 61 177-71 222 96 259-23 209 95-191 130-305-23-206 97-230-73-237 89-221-99-260 24-208-104Z" fill="url(#wetRock)"/>
+  <path d="m1500 1939 251-43 183 78 185-55 205 61 171-70 209 86 241-15-170 77-221-19-154 91-229-59-210 80-199-83-236 45-134-68Z" fill="#6D9291" opacity=".3"/>
+  <path d="m1549 1918 188-41 193 75 186-55 206 60 181-72 218 93 247-20-185 51-239-24-162 68-225-68-202 93-185-76-232 44-166-42Z" fill="#123644"/>
+  <!-- A tributary joins from the left, beneath an opposing right-hand chute. -->
+  <path d="m1033 1753 178 54 113-13 131 88 111 8 156 103-76 48-143-57-137 4-165-107-116-1-132-69Z" fill="#80AEA8" opacity=".7"/>
+  <path d="m1061 1764 150 53 120-12 126 87 122 9 138 93m-611-166 158 63 99-1 113 84" stroke="#D8DBCA" stroke-opacity=".58" stroke-width="13" fill="none"/>
+  <path d="m2897 1732-117 72-122-17-115 75-107-10-98 100-97 14-107 117 159 4 139-102 95-8 139-94 137 1 153-84Z" fill="#74AAA5" opacity=".7"/>
+  <path d="m2866 1751-106 67-113-17-121 83-100-18-99 106-98 10m374-95 103 9 150-89" stroke="#CEDBCC" stroke-opacity=".58" stroke-width="12" fill="none"/>
+  <!-- The last drop falls into an open jade plunge pool. -->
+  <path d="m1704 2022 185-73 161 35 143-72 154 62 129-38 175 102-155 70-145 1-104 93-144-43-128 91-182-47-159-86Z" fill="#112F3B"/>
+  <path d="m1721 2020 172-65 150 32 146-71 152 61 133-39 165 100-148 49-147-10-98 78-146-36-126 81-178-43-152-72Z" fill="#7F9F9A" opacity=".55"/>
+  <!-- One uninterrupted S-curve: an upper run, broad middle traverse, and final drop. -->
+  <path d="M1760 1475c80-10 120-35 200-13l240 30c10 58-50 128-155 183 135-22 345-20 455 45 25 65-65 92-180 120-60 20-140 75-185 118 160-42 315-33 415 27 30 65-50 95-125 135-65 30-135 115-165 170l-230 40c10-45 50-100 100-150-130-8-245 0-355-40-85-40-80-105 0-150 65-35 195-90 250-125-125 27-245 35-335-20-70-45-30-130 55-200 50-55 75-100 15-170Z" fill="url(#run)"/>
+  <path d="M1835 1513c49 14 97-21 142-15 37 11 48 6 84 17 13 63-38 112-48 160l-55 23c25-96 2-125-15-160-22 68-33 107-72 148-14 14-39 34-59 48 53-86 85-156 23-221Z" fill="#D6E4D1" opacity=".56"/>
+  <path d="M1884 1740c55 20 137-20 211-16 52 3 93-15 139-28 73-21 141 4 212 31-92 19-166 13-217 37-83 37-173 52-250 53l-108-23c-24-12-50-27-68-37Z" fill="#C7E0D2" opacity=".53"/>
+  <path d="M2051 1795c59 3 104-11 164-24 46-11 95-22 156-24-57 64-71 115-126 153-56 43-125 67-202 84 49-41 97-88 121-131-49 20-87 21-150 20Z" fill="#A8D2C6" opacity=".6"/>
+  <path d="M1822 1990c96-33 150-20 221-38 59-15 127-33 208-33 104-5 182 12 281 56-72 1-151 28-208 40-105 25-156 13-230 25-116 19-192 39-275 27l-92-26Z" fill="#C5DFD0" opacity=".51"/>
+  <path d="M2180 2065c96-28 151-36 245-70 39-9 70-17 118-8-60 64-93 126-118 201-26 74-75 117-143 161l-96 33c57-87 92-170 95-260-23 79-48 130-112 176-48 33-74 40-127 44 80-81 108-172 138-277Z" fill="#B4DBCE" opacity=".6"/>
+  <path d="M1954 1537c24 55 9 90-12 143m66-164c10 61-10 129-36 180m93 19c-36 50-61 109-111 146m193-133c-35 69-55 114-119 163m300-133c-48 69-73 98-129 137m-272 81c98 19 150-28 270-33m179 104c-52 60-61 137-101 192m155-236c-47 74-40 154-94 210m-137-156c-55 88-90 145-121 180" fill="none" stroke="#EDF0D8" stroke-linecap="round" stroke-opacity=".5" stroke-width="13"/>
+  <path d="m1879 1693 109 34 144-12 151-48 129 31m-590 206 123 49 130-24 169-42 138 1m-415 163 165 13 132-39 191 18" fill="none" stroke="#E1E7D2" stroke-linecap="round" stroke-opacity=".51" stroke-width="12"/>
+  <path d="M1657 1763c83-22 146-6 221 32l-103 17-94-15Zm855 106 81-28-31 53-108 41-97-10Zm-581 180-111 7-77 32 153 4 120-14Zm550 117-90 87-29 69 76-37 77-108Z" fill="#DCE8D5" opacity=".42"/>
+  <path d="M0 2190c337-64 625-56 854-13 261 49 483 131 745 142 312 15 510-77 793-141 298-70 541-80 783-65 275 19 451 68 665 134v313H0Z" fill="url(#pool)"/>
+  <path d="M1740 2278q70-58 180-38 70-40 170-30 130-10 220-15 90-15 150 15-60 50-170 45-80 45-190 17-110 48-220 23-80 15-140-17Z" fill="#A1D4C7" opacity=".34"/>
+  <g fill="#D3E8D5" opacity=".55"><path d="m1742 2280 104-14 56 9-97 14Zm172 48 142-13 85 9-189 17Zm221-92 106 5 58 14-170 2Zm-473 129 251 8-113 15-138-10Zm503 29 177-20 125 9-250 24Zm-298 48 254-13 160 14-328 15Zm-247 72 284-14 142 18-348 10Z"/></g>
+  <g fill="none" stroke="#A9CDC0" stroke-linecap="round"><path d="M493 2340c291 8 457 18 617 19m-376 58c197 7 371 15 526 13m1619-101c237-13 432-8 655 11m-693 74c329-5 516 6 709 20m-2742 94 367 13m1421-9 352-12" stroke-width="6" opacity=".31"/><path d="m1338 2325 143 4m1314 122 130 3m-1714 13 167 7m1649 50 165 4" stroke-width="3" opacity=".38"/></g>
+  <g filter="url(#blur)" fill="#C9E4D0" opacity=".29"><path d="M1536 2206c146-85 266-47 342 24 129-42 261-52 356-11 121-54 242-29 391 35l231 116-459-31-478 64-438-67Z"/><path d="m1643 1916 176-48 229 42 125-15 245 21 196 77-233 41-306-27-171 13Z"/></g>
+  <g fill="#D6E8D7" opacity=".52"><circle cx="1856" cy="2250" r="7"/><circle cx="1775" cy="2176" r="4"/><circle cx="2075" cy="2271" r="6"/><circle cx="2241" cy="2229" r="5"/><circle cx="2427" cy="2204" r="7"/><circle cx="2543" cy="2282" r="4"/><circle cx="1931" cy="2011" r="4"/><circle cx="2232" cy="1939" r="5"/><circle cx="1612" cy="1859" r="4"/><circle cx="2698" cy="1861" r="5"/></g>
+  <g fill="none" stroke="#C4E1D4" stroke-linecap="round" opacity=".39"><path d="m1785 2286-127 42m264-5-168 38m175 31-216 25m409-105 135 23m-87 37 214 12m-62 42 268 24m-543-21-238 34m431 32 226 17" stroke-width="5"/><path d="m1784 2239-56-26m73 49-80-5m315-48 33 26m180-23 74-14m188 64 88-25" stroke-width="3"/></g>
+  <!-- Broken near banks frame the pool without hiding its source. -->
+  <path d="M0 2146 174 2078 351 2120 475 2027 650 2073 805 1998 936 2088 1101 2049 1233 2152 1355 2135 1464 2218 1371 2285 1212 2297 1065 2381 920 2355 759 2443 590 2423 411 2531 201 2560H0ZM3840 2190 3650 2100 3500 2140 3330 2070 3170 2120 3030 2050 2890 2150 2710 2110 2580 2200 2450 2240 2540 2320 2700 2320 2880 2380 3110 2360 3290 2470 3500 2470 3700 2550 3840 2560Z" fill="url(#front)"/>
+  <path d="m0 2155 174-77 177 42 124-93 175 46 155-75 131 90 165-39 132 103-174-56-160 32-140-38-184 87-163-39-139 101-161-23-162 79Zm3840 66-201-106-154 41-165-94-150 62-136-85-142 89-182-38-144 102 215-37 178 15 176-77 145 42 170-80 161 89 152-32Z" fill="#63827E" opacity=".38"/>
+  <path d="M0 2366 201 2292 358 2326 549 2258 738 2327 887 2263 1040 2347 1150 2384 1118 2466 920 2560H0ZM3840 2339 3646 2252 3469 2287 3281 2218 3108 2283 2934 2207 2782 2296 2676 2382 2744 2462 2970 2560H3840Z" fill="#0C2C38"/>
+  <path d="m77 2215 162 36 122-39 156 47 131-26m2534-30 140 36 130-49 148 36 116-38" stroke="#A7B8A5" stroke-width="10" stroke-opacity=".26" fill="none"/>
+  <g fill="#789D89" opacity=".5"><path d="m310 2348 14-51 13 53 13-31 15 36Zm333-44 11-39 11 40 14-23 12 36Zm331 78 14-46 15 44 12-22 14 31Zm2047-81 14-42 12 40 13-20 15 33Zm395 17 13-48 16 45 11-27 12 35Z"/></g>
+  <path d="M0 0h3840v2560H0z" fill="url(#vignette)"/>
+  <path d="M0 0h3840v2560H0z" fill="#202421" opacity=".4"/>
+</svg>
