@@ -1,0 +1,8 @@
+/* Loaded only while Mosaic Dusk is selected via the optional theme-set hook. */
+@define-color theme_bg_color #203238;
+@define-color theme_fg_color #e2e6dc;
+@define-color theme_base_color #19292d;
+@define-color theme_text_color #e2e6dc;
+@define-color theme_selected_bg_color #94c7b6;
+@define-color theme_selected_fg_color #142125;
+@define-color borders #30454a;

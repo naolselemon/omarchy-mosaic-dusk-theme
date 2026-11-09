@@ -1,0 +1,77 @@
+#!/usr/bin/env bash
+# Optional Omarchy theme-set hook. Only Mosaic Dusk's GTK colors are managed.
+set -euo pipefail
+
+theme=${1:-}
+[[ -n $theme ]] || exit 0
+
+state_dir=${XDG_STATE_HOME:-$HOME/.local/state}/omarchy
+current_dir=$HOME/.local/state/omarchy/current
+config_dir=${XDG_CONFIG_HOME:-$HOME/.config}
+mkdir -p "$state_dir"
+exec 9>"$state_dir/mosaic-dusk-gtk.lock"
+flock 9
+
+# An older, deferred theme-set hook must not undo a more recent switch.
+[[ -f $current_dir/theme.name && $(<"$current_dir/theme.name") == "$theme" ]] || exit 0
+
+begin='/* mosaic-dusk GTK palette begin */'
+end='/* mosaic-dusk GTK palette end */'
+
+sync_css() {
+  local destination=$1 source=$2 tmp
+  if [[ $theme != mosaic-dusk ]] && { [[ ! -f $destination ]] || ! grep -qxF "$begin" "$destination"; }; then
+    return 0
+  fi
+  if [[ $theme == mosaic-dusk && ! -f $source ]]; then
+    return 0
+  fi
+
+  mkdir -p "${destination%/*}"
+  tmp=$(mktemp "${destination}.XXXXXX")
+  if [[ -f $destination ]]; then
+    awk -v begin="$begin" -v end="$end" '
+      $0 == begin { managed = 1; next }
+      $0 == end && managed { managed = 0; next }
+      !managed { print }
+    ' "$destination" >"$tmp"
+  fi
+
+  if [[ $theme == mosaic-dusk ]]; then
+    [[ ! -s $tmp || -z $(tail -c 1 "$tmp") ]] || printf '\n' >>"$tmp"
+    printf '%s\n' "$begin" >>"$tmp"
+    cat "$source" >>"$tmp"
+    printf '%s\n' "$end" >>"$tmp"
+  fi
+
+  if [[ -s $tmp ]]; then
+    if [[ -f $destination ]]; then
+      chmod --reference="$destination" "$tmp"
+    else
+      chmod 644 "$tmp"
+    fi
+    mv -f -- "$tmp" "$destination"
+  else
+    rm -f -- "$tmp" "$destination"
+  fi
+}
+
+sync_css "$config_dir/gtk-4.0/gtk.css" "$current_dir/theme/gtk-4.0.css"
+sync_css "$config_dir/gtk-3.0/gtk.css" "$current_dir/theme/gtk-3.0.css"
+
+# GTK4's GNOME accent setting otherwise stays blue under Omarchy's dark mode.
+# Save its prior value only once; don't overwrite a user's later manual choice.
+if [[ -n ${DBUS_SESSION_BUS_ADDRESS:-} ]] && gsettings get org.gnome.desktop.interface accent-color >/dev/null 2>&1; then
+  accent_state=$state_dir/mosaic-dusk-gtk-accent
+  if [[ $theme == mosaic-dusk ]]; then
+    if [[ ! -f $accent_state ]]; then
+      gsettings get org.gnome.desktop.interface accent-color >"$accent_state"
+    fi
+    gsettings set org.gnome.desktop.interface accent-color teal
+  elif [[ -f $accent_state ]]; then
+    if [[ $(gsettings get org.gnome.desktop.interface accent-color) == "'teal'" ]]; then
+      gsettings set org.gnome.desktop.interface accent-color "$(<"$accent_state")"
+    fi
+    rm -f -- "$accent_state"
+  fi
+fi

@@ -1,0 +1,17 @@
+/* Loaded only while Mosaic Dusk is selected via the optional theme-set hook.
+ * Libadwaita 1.4+ reads these colors for Nautilus and other GTK4 apps. */
+:root {
+  --window-bg-color: #203238;
+  --window-fg-color: #e2e6dc;
+  --view-bg-color: #19292d;
+  --view-fg-color: #e2e6dc;
+  --headerbar-bg-color: #30454a;
+  --headerbar-backdrop-color: #30454a;
+  --headerbar-fg-color: #e2e6dc;
+  --sidebar-bg-color: #283e42;
+  --sidebar-backdrop-color: #283e42;
+  --sidebar-fg-color: #e2e6dc;
+  --accent-bg-color: #94c7b6;
+  --accent-fg-color: #142125;
+  --accent-color: #94c7b6;
+}
