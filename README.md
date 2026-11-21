@@ -21,13 +21,8 @@ The starting background, **Mosaic Midpoint**, is joined by five companion scenes
 
 ## GTK file managers and apps
 
-`colors.toml` themes Omarchy's supported apps; `icons.theme` gives Nautilus and other GNOME apps sage-colored icons. Omarchy itself sets only dark mode and icons for GTK, so its default Adwaita surfaces and accent otherwise stay gray and blue. For matching GTK3/GTK4 backgrounds and a teal accent, opt into the bundled, reversible theme-change hook:
+`colors.toml` themes Omarchy's supported apps; `icons.theme` selects sage-colored GNOME icons. Omarchy does not automatically load custom GTK palette CSS from an installed theme.
 
-```sh
-omarchy hook install theme-set "$HOME/.config/omarchy/themes/mosaic-dusk/integrations/gtk-sync"
-omarchy theme set mosaic-dusk
-```
-
-The hook copies the palette into GTK's user stylesheet **only while Mosaic Dusk is selected**, preserves other user CSS, and restores the previous GNOME accent when switching away. Reopen running GTK apps (including Nautilus) to pick up the stylesheet. This integration is opt-in because themes installed from a repository must not execute arbitrary code; unrelated apps that do not use Omarchy palettes or GTK require their own theme support.
+For matching GTK3/GTK4 backgrounds and a teal accent, see the [separate, opt-in GTK integration](https://github.com/naolselemon/omarchy-mosaic-dusk-gtk-integration). The GTK files here are color-only stylesheets (`gtk-3.0.css` and `gtk-4.0.css`); the executable hook belongs to the companion repository. Reopen running GTK apps to pick up their stylesheet; other toolkits require their own theme support.
 
 The preserved [original Mosaic wallpaper source](https://github.com/naolselemon/mosaic/blob/main/assets/showcase-wallpaper.svg) lives in the Mosaic repository rather than being duplicated here. Artwork and theme © 2026 Naol Selemon; licensed under the MIT License (see [LICENSE](LICENSE)).
